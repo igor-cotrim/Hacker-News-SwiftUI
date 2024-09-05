@@ -11,6 +11,10 @@
 		815497A72C8918FD00DA1B39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815497A62C8918FD00DA1B39 /* ContentView.swift */; };
 		815497A92C8918FE00DA1B39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 815497A82C8918FE00DA1B39 /* Assets.xcassets */; };
 		815497AC2C8918FE00DA1B39 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 815497AB2C8918FE00DA1B39 /* Preview Assets.xcassets */; };
+		815497B42C891BEF00DA1B39 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815497B32C891BEF00DA1B39 /* NetworkManager.swift */; };
+		815497B62C891D6C00DA1B39 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815497B52C891D6C00DA1B39 /* PostData.swift */; };
+		815497B92C89230700DA1B39 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815497B82C89230700DA1B39 /* DetailView.swift */; };
+		815497BB2C89260300DA1B39 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815497BA2C89260300DA1B39 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		815497A62C8918FD00DA1B39 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		815497A82C8918FE00DA1B39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		815497AB2C8918FE00DA1B39 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		815497B32C891BEF00DA1B39 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		815497B52C891D6C00DA1B39 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		815497B82C89230700DA1B39 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		815497BA2C89260300DA1B39 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +60,9 @@
 			isa = PBXGroup;
 			children = (
 				815497A42C8918FD00DA1B39 /* Hacker_News_SwiftUIApp.swift */,
-				815497A62C8918FD00DA1B39 /* ContentView.swift */,
 				815497A82C8918FE00DA1B39 /* Assets.xcassets */,
+				815497B22C891BD900DA1B39 /* Models */,
+				815497B72C8922DC00DA1B39 /* Views */,
 				815497AA2C8918FE00DA1B39 /* Preview Content */,
 			);
 			path = "Hacker-News-SwiftUI";
@@ -65,6 +74,25 @@
 				815497AB2C8918FE00DA1B39 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		815497B22C891BD900DA1B39 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				815497B32C891BEF00DA1B39 /* NetworkManager.swift */,
+				815497B52C891D6C00DA1B39 /* PostData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		815497B72C8922DC00DA1B39 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				815497A62C8918FD00DA1B39 /* ContentView.swift */,
+				815497B82C89230700DA1B39 /* DetailView.swift */,
+				815497BA2C89260300DA1B39 /* WebView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +165,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				815497B42C891BEF00DA1B39 /* NetworkManager.swift in Sources */,
+				815497B62C891D6C00DA1B39 /* PostData.swift in Sources */,
 				815497A72C8918FD00DA1B39 /* ContentView.swift in Sources */,
+				815497BB2C89260300DA1B39 /* WebView.swift in Sources */,
+				815497B92C89230700DA1B39 /* DetailView.swift in Sources */,
 				815497A52C8918FD00DA1B39 /* Hacker_News_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +304,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hacker-News-SwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = FBC3L63M29;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -300,6 +333,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hacker-News-SwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = FBC3L63M29;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

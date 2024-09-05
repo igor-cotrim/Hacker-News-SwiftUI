@@ -13,9 +13,11 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List(networkManager.posts) { post in
-                HStack {
-                    Text(String(post.points))
-                    Text(post.title)
+                NavigationLink(destination: DetailView(url: post.url)) {
+                    HStack {
+                        Text(String(post.points))
+                        Text(post.title)
+                    }
                 }
             }
             .navigationTitle("Hacker News SwiftUI")
@@ -29,9 +31,3 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
-
-//let posts = [
-//    Post(id: "1", title: "Hello"),
-//    Post(id: "2", title: "Bonjour"),
-//    Post(id: "3", title: "Oi"),
-//]
